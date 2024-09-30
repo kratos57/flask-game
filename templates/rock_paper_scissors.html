@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="static/styles.css"> <!-- Add your CSS file here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .options {
+            margin: 20px;
+        }
+        .option {
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+        .result img {
+            width: 100px; /* Adjust the size as needed */
+            height: auto;
+        }
+        #timer {
+            font-size: 20px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rock-Paper-Scissors</h1>
+    <div id="timer">3</div>
+    <div class="options">
+        <div class="option" id="rock">
+            <img src="static/rock.jpg" alt="Rock" style="width:100px; height:auto;"/>
+        </div>
+        <div class="option" id="paper">
+            <img src="static/paper.png" alt="Paper" style="width:100px; height:auto;"/>
+        </div>
+        <div class="option" id="scissors">
+            <img src="static/cisor.webp" alt="Scissors"style="width:100px; height:auto;" />
+        </div>
+    </div>
+    <button id="reset-btn">Reset Game</button>
+    <div class="result" id="result"></div>
+
+    <script src="static/rock_paper_scissors.js"></script> <!-- Link to your JS file -->
+</body>
+</html>

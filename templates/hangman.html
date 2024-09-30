@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="static/styles.css"> <!-- Add your CSS file here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .word {
+            font-size: 24px;
+            letter-spacing: 5px;
+            margin: 20px;
+        }
+        .guess {
+            margin: 20px;
+        }
+        .incorrect-guesses {
+            color: red;
+        }
+        .result {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        #reset-btn, #help-btn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hangman Game</h1>
+    <div class="word" id="word-display"></div>
+    <div class="guess">
+        <input type="text" id="guess-input" maxlength="1" placeholder="Enter a letter" />
+        <button id="guess-btn">Guess</button>
+    </div>
+    <div class="incorrect-guesses" id="incorrect-guesses"></div>
+    <div class="result" id="result"></div>
+    <button id="reset-btn">Reset Game</button>
+    <button id="help-btn">Help</button>
+
+    <script src="static/hangman.js"></script> <!-- Link to your JS file -->
+</body>
+</html>

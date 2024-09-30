@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to My Game Website</h1>
+
+    <!-- Image Link to Memory Matching Game -->
+    <a href="/memory-game">
+        <img src="{{ url_for('static', filename='memory game.png') }}" alt="Play Memory Matching Game" style="width:300px; height:auto;">
+    </a>
+    <a href="/tic-tac-toe">  
+        <img src="{{ url_for('static', filename='tik.png') }}" alt="Play tic tac toe" style="width:300px; height:auto;">
+    </a>
+    <a href ="/rock-paper-scissors"><img src="{{ url_for('static', filename='rock game.jpg') }}" alt="play rock paper scissor" style="width:300px; height:auto;">
+    </a>
+</a>
+<a href ="/hangman"><img src="{{ url_for('static', filename='hangman.jpeg') }}" alt="play hangman" style="width:300px; height:auto;">
+</a>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
